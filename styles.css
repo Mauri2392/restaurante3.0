@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette:100,300,400,400italic,500,700&amp;display=swap');
+
+:root{
+    --prymary: #007bff; 
+    --secondary: rgb(229, 233, 236); 
+    --third: #130f40; 
+    --fourth: rgb(195, 198, 201); 
+    --fifth: rgb(216, 223, 231); 
+    --black: #222;
+    --white: #fff; 
+    --border: rgb(94, 94, 94);
+    --celete: rgb(0, 141, 248); 
+    --celestedos: rgb(108, 174, 224);
+} 
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; 
+    font-family: 'Courgette',sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */ 
+} 
+
+body { 
+    background-color: var(--white);
+    /* background-color: var(--secondary); */
+    /* background-color:  rgb(229, 233, 236);*/
+} 
+
+h1 {
+    font-size: 30px;
+} 
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+} 
+
+.flag {
+    text-align: center;
+   /* padding: 20px; */ 
+    max-width: 700px;
+    margin: 0 auto; /* Centrar la sección */ 
+    position: relative; /* Para posicionar elementos dentro del contenedor */ 
+}
+
+.flagscontainer { 
+    display: flex; 
+    justify-content: space-around; 
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    background-color: var(--white);
+} 
+
+.flag-icon {
+    width: 30px; /* Tamaño de las banderas */
+    height: 20px;
+    object-fit: contain; /* Asegura que las imágenes mantengan su proporción */
+    border: 1px solid var(--white); /* Opcional: borde alrededor de las banderas */
+    border-radius: 3px; /* Opcional: bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las banderas */
+}
+
+.flag-icon:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+    transition: transform 0.2s ease-in-out; /* Animación suave */
+} 
+
+.header-section {
+   /*  text-align: center; 
+    max-width: 700px;
+    margin: 0 auto; Centrar la sección  
+    position: relative; Para posicionar elementos dentro del contenedor */ 
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    overflow: hidden;
+} 
+
+.header-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+} 
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    /* height: 40vh;  Altura de la imagen */
+    object-fit: cover; /* Para asegurar que la imagen cubra el espacio disponible */
+    max-width: 700px; /* Ancho máximo de la imagen */ 
+    
+} 
+
+.header-description {
+    text-align: center; /* Centra el texto */
+    font-size: 1.2rem;
+    
+    color: var(--third); /* Cambia el color si es necesario */
+    margin: 20px 0; /* Ajusta el espacio encima y debajo del texto */
+    padding: 0 15px; /* Añade un poco de espacio lateral */ 
+} 
+
+.inform {
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    left: 50%; /* Centra horizontalmente */
+    transform: translate(-50%, 100%); /* Comienza fuera de la vista (abajo) */
+    text-align: center;
+    color: var(--white);
+    animation: slideUp 1s ease-out forwards; /* Aplica la animación */
+} 
+
+@keyframes slideUp {
+    0% {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+} 
+
+.header-title {
+    /* font-size: 2.5rem; */ 
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--white); 
+} 
+
+.inform p {
+    font-size: 1.2rem;
+    color: var(--white);
+} 
+
+.header-description {
+    text-align: center; /* Centra el texto */
+    font-size: 1.2rem;
+    color: var(--third); /* Cambia el color si es necesario */
+    margin: 30px 0; /* Ajusta el espacio encima y debajo del texto */
+    padding: 0 15px; /* Añade un poco de espacio lateral */ 
+} 
+
+.navbar-container {
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 10px 0;
+    position: sticky; /* Hace que la barra permanezca fija */
+    top: 0; /* Fija la posición en la parte superior */
+    background-color: var(--third); /* Asegúrate de que tenga un fondo */
+    overflow-x: auto; /* Permite el desplazamiento horizontal */ 
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+    /* scrollbar-width: thin;  Estilo para navegadores compatibles */
+    /* scrollbar-width: none;  Oculta la barra de desplazamiento en navegadores compatibles */ 
+} 
+
+.navbar-container::-webkit-scrollbar {
+    display: none;  /* Oculta la barra de desplazamiento en navegadores basados en Webkit */ 
+    /* height: 8px;  Altura de la barra de desplazamiento */
+}  
+
+.navbar-container::-webkit-scrollbar-thumb {
+    background-color: var(--prymary);  /* Color de la barra */ 
+    border-radius: 4px;
+} 
+
+.navbar-container::-webkit-scrollbar-track {
+    background: var(--secondary);  /* Fondo de la barra */
+} 
+
+.nav-link {
+    display: inline-block;
+    color: var(--white);
+    border: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    white-space: nowrap; /* Evita que los enlaces se rompan en varias líneas */
+    transition: color 0.3s, background-color 0.3s;
+} 
+
+.nav-link.active {
+    color: var(--secondary); /* Color del enlace activo */
+    text-decoration: underline; 
+    font-weight: bold; 
+  /*  transition: color 0.3s ease-in-out;*/
+} 
+
+.contenedor {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+} 
+
+.contenedor h3 {
+    display: flex;
+    justify-content: center; 
+    background-color: var(--third); 
+    padding: 15px; 
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    border-bottom: 1px solid var(--third); 
+    margin-top: 50px; 
+    color: var(--white);
+    /* justify-content: flex-start; */
+    /* margin-left: 35px; */
+} 
+
+.cajas {
+    width: 100%; 
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border); 
+    /*background-color: white;*/
+   /* margin-bottom: 0px; */
+    /* height: 100px; */
+    /*  margin-top: 0px; */
+} 
+
+.info {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 5px; 
+    padding: 10px;
+} 
+
+.info p {
+    margin-left: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.info p span { 
+    color: var(--third);
+    font-weight: 600; 
+    font-size: 20px; 
+} 
+
+/* si piden con img
+.info img {
+    width: 120px;
+    height: 120px; 
+    margin: 0 auto; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+} */ 
+
+footer {
+    background-color: var(--third); 
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    max-width: 700px; 
+    margin: 0 auto; 
+    padding: 30px; 
+    padding-bottom: 20px;
+} 
+
+footer p { 
+    font-size: 18px;
+    color: var(--white); 
+    padding: 5px;
+} 
+
+/* 
+footer img {
+    width: 150px;
+    height: 150px; 
+    border-radius: 20%;
+} */
+
+footer i {
+    font-size: 30px;
+}
+
+.horarios,
+.ubicacion, 
+.contacto, 
+.email, 
+.redes  { 
+    color: var(--white);
+    /* font-weight: 600; */
+    margin: 30px; 
+} 
+
+.redes i {
+    cursor: pointer;
+    font-size: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: var(--white); 
+    margin-top: 10px; 
+} 
+
+.redes i:hover {
+    transform: scale(1.1); 
+} 
+
+/* 
+.iframe {
+    text-align: center;
+} */

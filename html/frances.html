@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css"> 
+    <!-- icônes Bootstrap --> 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    /> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    /> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <title>Restaurant Démo</title> 
+</head>
+<body>
+    <section class="flag">
+        <div class="flagscontainer">
+            <a href="../index.html">
+                <img src="../img/Bandera_de_España.svg.png" alt="España" class="flag-icon">
+            </a>
+            
+            <a href="./italiano.html"> 
+                <img src="../img/Flag_of_Italy.svg.png" alt="Italien" class="flag-icon"> 
+            </a> 
+
+            <a href="./ingles.html">
+                <img src="../img/Flag_of_Great_Britain_(1707–1800).svg.png" alt="Anglais" class="flag-icon">
+            </a> 
+        </div> 
+    </section> 
+
+    <section class="header-section"> 
+        <div class="header-content">
+            <img src="../img/img heder.jpg" alt="Image d'en-tête" class="header-img"> 
+
+            <div class="inform">
+                <h1 class="header-title">"Bienvenue dans notre restaurant"</h1> 
+            </div> 
+        </div> 
+    </section> 
+
+        <div>
+            <p class="header-description">Découvrez nos délicieux plats et profitez d'une expérience unique.</p>
+        </div>
+
+        <div class="navbar-container">
+            <a href="#pizza" class="nav-link">Pizzas</a>
+            <a href="#hamburguesas" class="nav-link">Hamburgers</a> 
+            <a href="#ensaladas" class="nav-link">Salades</a> 
+            <a href="#entrantes" class="nav-link">Entrées</a> 
+            <a href="#carnes" class="nav-link">Viandes</a> 
+            <a href="#postres" class="nav-link">Desserts</a>
+            <a href="#bebidas" class="nav-link">Boissons</a> 
+            <a href="#pescados" class="nav-link">Poissons</a> 
+            <a href="#helados" class="nav-link">Glaces</a> 
+        </div> 
+
+    <section id="pizza">
+        <div class="contenedor">
+            <h3>Pizzas</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Classique</span></p>
+                    <p>La combinaison idéale des saveurs italiennes dans une pizza au jambon et au fromage.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div> 
+            </div> 
+
+            <div class="cajas"> 
+                <div class="info"> 
+                    <p><span>Pepperoni</span></p>
+                    <p>La combinaison parfaite des saveurs italiennes dans une pizza au pepperoni avec ses épices respectives.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div> 
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Viande</span></p>
+                    <p>Pizza à la viande sélectionnée, cuite en même temps que la pâte, accompagnée de ses épices.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div> 
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Légumes</span></p>
+                    <p>Pizza conçue pour les amateurs de légumes.</p>
+                    <p><span>5€</span></p>
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+    <section id="hamburguesas">
+        <div class="contenedor">
+            <h3>Hamburgers</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Bacon</span></p>
+                    <p>Hamburger au bacon, sauce BBQ et 250g de viande de bœuf.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Végétarien</span></p>
+                    <p>Hamburger 100% végétarien avec des ingrédients naturels, tout en respectant le goût traditionnel.</p>
+                    <p>Allergènes : Œufs, Légumes</p>
+                    <p><span>5€</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="ensaladas">
+        <div class="contenedor">
+            <h3>Salades</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Méditerranéenne</span></p> 
+                    <p>Tomates cerises, concombre, poivrons, olives kalamata, oignon rouge et fromage.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Tomate</span></p>
+                    <p>Tomates juteuses coupées en rondelles avec de l'origan.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div> 
+            </div>
+        </div> 
+    </section> 
+
+    <section id="entrantes">
+        <div class="contenedor">
+            <h3>Entrées</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Calamars</span></p>
+                    <p>Les meilleurs calamars de la Méditerranée.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Frites</span></p>
+                    <p>Pommes de terre croustillantes et dorées.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="carnes">
+        <div class="contenedor">
+            <h3>Viandes</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Côtes de porc BBQ</span></p>
+                    <p>Marinées dans une riche sauce BBQ fumée.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Filet de bœuf</span></p>
+                    <p>Pièce de viande tendre et juteuse cuite à la perfection.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p> 
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="postres">
+        <div class="contenedor">
+            <h3>Desserts</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Flan</span></p>
+                    <p>Flan traditionnel aux œufs avec caramel.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p> 
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Cheesecake</span></p>
+                    <p>Cheesecake crémeux avec base de biscuit et vanille.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="bebidas">
+        <div class="contenedor">
+            <h3>Boissons</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Bière</span></p>
+                    <p>300ml</p>
+                    <p><span>5€</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Coca Cola</span></p>
+                    <p>300ml</p>
+                    <p><span>5€</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="pescados">
+        <div class="contenedor">
+            <h3>Poissons</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Merlu</span></p>
+                    <p>250g du meilleur merlu méditerranéen.</p> 
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Sole</span></p>
+                    <p>250g de la meilleure sole méditerranéenne.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="helados"> 
+        <div class="contenedor">
+            <h3>Glaces</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Deux boules (120g)</span></p>
+                    <p>Tous les parfums.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Trois boules (180g)</span></p>
+                    <p>Tous les parfums.</p>
+                    <p>Allergènes : Œufs, Légumes</p> 
+                    <p><span>5€</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <footer id="footer">
+        <div class="conteiner"> 
+
+            <div class="horarios">
+                <i class="fa-regular fa-clock"></i>
+                <p>Horaires</p>
+                <p>Du lundi au samedi :</p>
+                <p>8h30 à 20h30</p>
+            </div> 
+
+            <div class="ubicacion">
+                <i class="fa-solid fa-location-dot"></i> 
+                <p>Adresse :</p>
+                <p>Eduardo Torroja 6, Communauté Valencienne</p>
+            </div> 
+
+            <div class="contacto">
+                <i class="bi bi-telephone"></i> 
+                <p>Contact</p>
+                <p>+34 634 898234</p>
+            </div> 
+
+            <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+                <p>E-mail</p>
+                <p>tonemail@gmail.com</p>
+            </div> 
+
+            <div class="redes">
+                <p>Réseaux</p>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+
+            <div id="map" style="height: 250px; width: 100%; margin-top: 20px; margin-bottom: 20px;"></div> 
+
+            <p>&copy; 2024 Notre Restaurant. Tous droits réservés.</p> 
+        </div>
+    </footer> 
+
+    <script src="../main2.js"></script> 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+</html>

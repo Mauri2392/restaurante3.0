@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css"> 
+    <!-- Bootstrap icons --> 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    /> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    /> 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <title>Demo Restaurant</title> 
+</head>
+<body>
+    <section class="flag">
+        <div class="flagscontainer">
+            <a href="../index.html">
+                <img src="../img/Bandera_de_España.svg.png" alt="Spanish" class="flag-icon">
+            </a>
+            <a href="./frances.html">
+                <img src="../img/fr.jpg" alt="French" class="flag-icon">
+            </a> 
+            <a href="../html/italiano.html"> 
+                <img src="../img/Flag_of_Italy.svg.png" alt="Italian" class="flag-icon">
+            </a>
+        </div> 
+    </section> 
+
+    <section class="header-section"> 
+        <div class="header-content">
+            <img src="../img/img heder.jpg" alt="Header Image" class="header-img"> 
+
+            <div class="inform">
+                <h1 class="header-title">"Welcome to Our Restaurant"</h1> 
+            </div> 
+        </div> 
+    </section> 
+
+        <div>
+            <p class="header-description">Discover our delicious dishes and enjoy a unique experience.</p>
+        </div>
+
+        <div class="navbar-container">
+            <a href="#pizza" class="nav-link">Pizzas</a>
+            <a href="#hamburguesas" class="nav-link">Burgers</a> 
+            <a href="#ensaladas" class="nav-link">Salads</a> 
+            <a href="#entrantes" class="nav-link">Starters</a> 
+            <a href="#carnes" class="nav-link">Meats</a> 
+            <a href="#postres" class="nav-link">Desserts</a>
+            <a href="#bebidas" class="nav-link">Drinks</a> 
+            <a href="#pescados" class="nav-link">Fish</a> 
+            <a href="#helados" class="nav-link">Ice Cream</a> 
+        </div> 
+
+    <section id="pizza">
+        <div class="contenedor">
+            <h3>Pizzas</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Classic</span></p>
+                    <p>The ideal combination of Italian flavors in a ham and cheese pizza.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div> 
+            </div> 
+
+            <div class="cajas"> 
+                <div class="info"> 
+                    <p><span>Pepperoni</span></p>
+                    <p>The perfect combination of Italian flavors in a pepperoni pizza with its respective spices.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div> 
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Meat</span></p>
+                    <p>Pizza with selected meat, cooked together with the dough, accompanied by spices.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div> 
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Vegetables</span></p>
+                    <p>Pizza made for vegetable lovers.</p>
+                    <p><span>€5</span></p>
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+    <section id="hamburguesas">
+        <div class="contenedor">
+            <h3>Burgers</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Bacon</span></p>
+                    <p>Burger with bacon, BBQ sauce, and 250g of sirloin beef.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Vegetarian</span></p>
+                    <p>100% vegetarian burger made with natural ingredients while keeping the traditional burger flavor.</p>
+                    <p>Allergens: Eggs, Vegetables</p>
+                    <p><span>€5</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="ensaladas">
+        <div class="contenedor">
+            <h3>Salads</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Mediterranean</span></p> 
+                    <p>Cherry tomatoes, cucumber, bell peppers, kalamata olives, red onion, and cheese.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Tomato</span></p>
+                    <p>Juicy sliced tomatoes with oregano.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div> 
+            </div>
+        </div> 
+    </section> 
+
+    <section id="entrantes">
+        <div class="contenedor">
+            <h3>Starters</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Calamari</span></p>
+                    <p>The best calamari from the Mediterranean.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>French Fries</span></p>
+                    <p>Crispy and golden French fries.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="carnes">
+        <div class="contenedor">
+            <h3>Meats</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>BBQ Pork Ribs</span></p>
+                    <p>Marinated in a rich and smoky BBQ sauce.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Beef Tenderloin</span></p>
+                    <p>Juicy and tender cut of beef cooked to perfection.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p> 
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="postres">
+        <div class="contenedor">
+            <h3>Desserts</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Flan</span></p>
+                    <p>Traditional egg flan with caramel.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p> 
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Cheesecake</span></p>
+                    <p>Creamy cheesecake with a biscuit base and vanilla.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="bebidas">
+        <div class="contenedor">
+            <h3>Drinks</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Beer</span></p>
+                    <p>300ml</p>
+                    <p><span>€5</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Coca Cola</span></p>
+                    <p>300ml</p>
+                    <p><span>€5</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="pescados">
+        <div class="contenedor">
+            <h3>Fish</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Hake</span></p>
+                    <p>250g of the best Mediterranean hake.</p> 
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Sole</span></p>
+                    <p>250g of the finest Mediterranean sole.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div>
+            </div>
+        </div> 
+    </section> 
+
+    <section id="helados"> 
+        <div class="contenedor">
+            <h3>Ice Cream</h3>
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Two scoops (120g)</span></p>
+                    <p>All flavors available.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div>
+            </div> 
+
+            <div class="cajas">
+                <div class="info"> 
+                    <p><span>Three scoops (180g)</span></p>
+                    <p>All flavors available.</p>
+                    <p>Allergens: Eggs, Vegetables</p> 
+                    <p><span>€5</span></p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+
+    <!-- The content continues in the same structure with translations to English. -->
+
+    <footer id="footer">
+        <div class="conteiner"> 
+
+            <div class="horarios">
+                <i class="fa-regular fa-clock"></i>
+                <p>Hours</p>
+                <p>Monday to Saturday:</p>
+                <p>8:30 AM to 8:30 PM</p>
+            </div> 
+
+            <div class="ubicacion">
+                <i class="fa-solid fa-location-dot"></i> 
+                <p>Address:</p>
+                <p>Eduardo Torroja 6, Valencian Community</p>
+            </div> 
+
+            <div class="contacto">
+                <i class="bi bi-telephone"></i> 
+                <p>Contact</p>
+                <p>+34 634 898234</p>
+            </div> 
+
+            <div class="email">
+                <i class="fa-regular fa-envelope"></i>
+                <p>E-mail</p>
+                <p>youremail@gmail.com</p>
+            </div> 
+
+            <div class="redes">
+                <p>Social Media</p>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </div>
+
+            <div id="map" style="height: 250px; width: 100%; margin-top: 20px; margin-bottom: 20px;"></div> 
+
+            <p>&copy; 2024 Our Restaurant. All rights reserved.</p> 
+        </div>
+    </footer> 
+
+    <script src="../main2.js"></script> 
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+</html>
